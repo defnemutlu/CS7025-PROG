@@ -27,9 +27,10 @@ function checkPlayerScore() {
   }
 }
 
-addOneToPlayerScore();
+addOneToPlayerScore(); 
 checkPlayerScore();
 addOneToPlayerScore();
 checkPlayerScore();
 addOneToPlayerScore();
 checkPlayerScore();
+
