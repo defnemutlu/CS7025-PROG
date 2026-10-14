@@ -1,13 +1,16 @@
+//My data source variable
 let dataSource =
-  "https://api.open-meteo.com/v1/forecast?latitude=41.01&longitude=28.98&current=temperature_2m,wind_speed_10m"; //My data source variable
+  "https://api.open-meteo.com/v1/forecast?latitude=41.01&longitude=28.98&current=temperature_2m,wind_speed_10m"; 
 
 fetch(dataSource) //The function that requests the data from my data source
   .then((response) => {
-    // The function that gets the response from the request and converts it to JSON
-    return response.json(); //Here the respons is the raw data from the request and the .json() method converts it to JS object, return is used to pass the data to the next .then() method
+    // response is the raw reply from the server.
+    // .json() converts the JSON text into a JavaScript object.
+    // return passes that object on to the next .then()
+    return response.json(); 
   })
   .then((data) => {
-    // The function that gets the data from the JSON and logs it to the console
+    // The function that gets the data from the JSON and logs it to the console and puts the info on the webpage
     console.log(data);
 
     // This is how I get the data from the JSON and display it on the page
