@@ -1,0 +1,33 @@
+html {
+  background-color: #253949;
+}
+
+.container {
+  font-family: Calibri, Carlito, "Segoe UI", sans-serif;
+  background-color: #253949;
+  background-image:
+    linear-gradient(rgba(37, 57, 73, 0.5), rgba(37, 57, 73, 0.5)),
+    url("istanbul.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 175px;
+  margin: 125px 0;
+}
+
+#weather {
+  color: #fff;
+  font-size: 60px;
+}
+
+#wind {
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  text-align: center;
+}
